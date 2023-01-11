@@ -1,0 +1,43 @@
+$color-green: #16e09e;
+$color-gray: #a0a6b1;
+$color-light-white: #E8F1F9;
+$text-primary: #202027;
+$text-gray: #485064;
+$text-white: #c7cbd6;
+$text-gray-light: #a0a6b1;
+$color-primary: #7c4eff;
+$color-dark-primary: #727D99;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat";
+}
+h1 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 68px;
+    color: $text-primary;
+}
+h2 {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 51px;
+}
+h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+}
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+h5 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+}

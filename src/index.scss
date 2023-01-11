@@ -1,5 +1,8 @@
 @import './libs/normalize.css';
-@import './style/fonts';
-@import './style/nullstyle';
+@import './style/fonts.scss';
+@import './style/nullstyle.scss';
 @import './style/var';
-@import './style/header.scss'
+@import './style/_components.scss';
+@import './style/header.scss';
+@import './style/footer.scss';
+@import './style/main.scss';

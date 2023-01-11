@@ -1,0 +1,115 @@
+.footer {
+    width: 100%;
+    background-color: $text-primary;
+    &__body {
+        padding: 48px 0px 24px 0px;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        a {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: $text-gray-light;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__logo {
+        a {
+            display: flex;
+            align-items: center;
+        }
+        span {
+            color: $color-light-white;
+            margin-left: 14px;
+            font-family: "Oxanium";
+            font-weight: 600;
+        }
+    }
+    .icon {
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+    }
+    &__contacts-email {
+        &::before {
+            background: url(../src/assets/icons/sms-tracking.svg) no-repeat;
+        }
+    }
+    &__contacts-phone {
+        &::before {
+            background: url(../src/assets/icons/call-calling.svg) no-repeat;
+        }
+    }
+    &__contacts-telegram {
+        &::before {
+            background: url(../src/assets/icons/telegram.svg) no-repeat;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 24px;
+        height: 100%;
+        li {
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #f9fbfd;
+        }
+    }
+    &__links_title {
+        font-family: "TT Hoves";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $color-gray;
+        opacity: 0.75;
+    }
+    &__links {
+        display: flex;
+        column-gap: 120px;
+    }
+    &__line {
+        margin-top: 72px;
+        margin-bottom: 36px;
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        p {
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-dark-primary;
+        }
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+    }
+}
