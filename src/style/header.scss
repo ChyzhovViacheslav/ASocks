@@ -18,17 +18,95 @@
             line-height: 28px;
         }
     }
-    &__nav{
+    &__nav {
         display: flex;
         column-gap: 28px;
-        a{
-            font-family: 'Montserrat';
+        a {
+            font-family: "Montserrat";
             text-transform: uppercase;
             line-height: 20px;
             font-weight: 400;
         }
     }
-    &__lang{
+    &__lang {
         cursor: pointer;
+    }
+    @media (max-width: ($md2 + px)) {
+        
+    }
+    @media (max-width: ($md3 + px)) {
+        
+        &__body{
+            justify-content: baseline;
+        }
+        &__logo{
+            flex: 1 0 auto;
+        }
+        .header__burger-ico{
+            --transform-scale: 1;
+            margin-left: 20px;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            z-index: 999;
+            &::after, &::before, div{
+                content: '';
+                position: absolute;
+                top: auto;
+                bottom: auto;
+                height: 3px;
+                width: 100%;
+                border-radius: 12px;
+                background-color: $text-primary;
+                transform: translate(-50%, -50%);
+                transform-origin: 50% 50%;
+                transition-property: transform, top, bottom;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+            &::after{
+                top: 1.5px;
+                left: 50%;
+            }
+            &::before{
+                bottom: -1px;
+                left: 50%;
+            }
+            div{
+                transform: scale(var(--transform-scale));
+                top: 45%;
+                left: 0%;
+            }
+        }
+        .burger {
+            z-index: 50;
+            background-color: rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(5px);
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            left: 100%;
+            align-items: center;
+            justify-content: center;
+            row-gap: 80px;
+            font-size: 32px;
+            height: 100vh;
+            width: 100vw;
+            transition: left 0.3s cubic-bezier(0.5, 0, 0.5, 0);
+        }
+        .active{
+            left: 0%;
+        }
+        .ico-active{
+            --transform-scale: 0;
+            &::after{
+                top: 42.5%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            &::before{
+                bottom: 42.5%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+        }
     }
 }
